@@ -58,6 +58,7 @@ Product.create!(title: 'Modern CSS with Tailwind',
   image_url: 'tailwind.jpg',
   price: 18.95)
 
-User.create! name: 'dave', password: Rails.application.credentials.dave_password
+User.create! name: 'dave', 
+  password: Rails.application.credentials.dave_password
 
 
