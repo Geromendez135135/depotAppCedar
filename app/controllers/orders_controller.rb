@@ -27,7 +27,7 @@ class OrdersController < ApplicationController
 
   # POST /orders or /orders.json
   def create
-    @order = Order.new(order_params)
+    @order = Order.new(order_params) # a new se le pasa el HASH que viene del form
     @order.add_line_items_from_cart(@cart)
 
     respond_to do |format|
